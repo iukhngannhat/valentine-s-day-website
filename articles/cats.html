@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Andy and Claire's</title>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/flexbox.css">
+	<script src="../interactive.js"></script>
+</head>
+<body>
+	
+	<header class="main-header">
+		<h1 class="name"><a href="../index.html">Andy and Claire's</a></h1>
+		<ul class="main-nav">
+			<li><a href="Photo Diary.html">Photo Diary</a></li>
+			<li><a href="kittens">Cats and Kittens</a></li>
+			<li><a href="Favorite Links.html">Favorite Links</a></li>
+		</ul>
+	</header><!--/.main-header-->   
+
+	<div class="banner">
+		<h1 class="headline">Cats and Kittens that We Love!</h1>
+		<span class="tagline">(...whom should be remembered for a long time.)</span>
+	</div><!--/.banner-->
+	
+	<main class="main">		
+		<h2>Click the first dot to start browsing images:)</h2>
+		<blockquote><em>"Sometimes I feel like I was once a street kitten, which was found by you in the streets of relationship insecurity. Then you brought me home, nurtured me with lots of love, and made me a healthier kitten!"</em> - Claire
+		</blockquote>
+	</main>
+
+	 <!-- Slideshow container -->
+<div class="slideshow-container fade">
+
+	<!-- Full images with numbers and message Info -->
+	<div class="Containers">
+	  <img src="../img/blackie.png" style="width:100%" title="Blackie">
+	  <div class="Info">Blackie, your favorite black kitten!</div>
+	</div>
+  
+	<div class="Containers">
+	  <img src="../img/meow.jpg" style="width:100%" title="Tabbies">
+	  <div class="Info">Tyrannosaurus & Flying Dragon, amazing tabby cats.</div>
+	</div>
+  
+	<div class="Containers">
+	  <img src="../img/nebular.jpg" style="width:100%" title="Nebular">
+	  <div class="Info">Nebular, white cat inspired by the artist Tsuchiya Yoshimasa.</div>
+	</div>
+
+	<div class="Containers">
+		<img src="../img/kitten washing.jpeg" style="width:100%" title="Washing kitten">
+		<div class="Info">A kitten who has become a plush toy while being washed.</div>
+	  </div>
+
+	<div class="Containers">
+		<img src="../img/andresito.JPG" style="width:100%" title="Andresito">
+		<div class="Info">Andresito, my first kitten gifted by you.</div>
+	</div>
+  
+	<!-- Back and forward buttons -->
+	<a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="forward" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The circles/dots -->
+  <div style="text-align:center">
+	<span class="dots" onclick="currentSlide(1)"></span>
+	<span class="dots" onclick="currentSlide(2)"></span>
+	<span class="dots" onclick="currentSlide(3)"></span>
+	<span class="dots" onclick="currentSlide(4)"></span> 
+	<span class="dots" onclick="currentSlide(5)"></span>   
+</div> 
+
+	<footer class="main-footer">
+		<span>&copy;2022 Claire your beloved girl</span>
+	</footer>
+	
+</body>
+</html>

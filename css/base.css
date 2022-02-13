@@ -1,0 +1,217 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	margin: 0;
+}
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+h2,
+h3,
+a {
+	color: #510958;
+}
+h2,
+h3 {
+	margin-top: 0;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 80%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.35em;
+	margin: 0;
+}
+.main-nav {
+	margin-top: 5px;
+	list-style: none;
+}
+.name a,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+.main-nav a {
+	font-size: 1em;
+	color: #eeafde;
+}
+.main-nav a:hover {
+	color: #510958;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+.banner,
+.main-footer {
+	text-align: center;
+}
+.banner {
+	color: #fff;
+	background: #eeafde;
+	padding: 3.2em 0;
+	margin-bottom: 48px;
+}
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+.main {
+	padding-right: 7em;
+	padding-left: 7em;
+	margin: auto
+}
+.main-footer {
+	background: #f7e8f5;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+.headline {
+	margin-bottom: 0;
+}
+.feat-img {
+	border-radius: 5px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 800px;
+	position: relative;
+	margin: auto;
+  }
+  
+  /* Make the images invisible by default */
+  .Containers {
+	display: none;
+	max-width: 700px;
+	position: relative;
+	margin: auto;
+	text-align: center;
+  }
+  
+  /* forward & Back buttons */
+  .Back, .forward {
+	cursor: pointer;
+	position: absolute;
+	top: 48%;
+	width: auto;
+	margin-top: -23px;
+	padding: 17px;
+	color: grey;
+	font-weight: bold;
+	font-size: 19px;
+	transition: 0.4s ease;
+	border-radius: 0 5px 5px 0;
+	user-select: none;
+  }
+  
+  /* Place the "forward button" to the right */
+  .forward {
+	right: 0;
+	border-radius: 4px 0 0 4px;
+  }
+  
+  /*when the user hovers,add a black background with some little opacity */
+  .Back:hover, .forward:hover {
+	background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption Info */
+  .Info {
+	color: #000000;
+	font-size: 16px;
+	padding: 10px 14px;
+	position: relative;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+  }
+
+  /* The circles or bullets and indicators */
+  .dots {
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+	margin: 0 3px;
+	background-color: #acc;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.5s ease;
+  }
+  
+  .enable, .dots:hover {
+	background-color: #717161;
+  }
+  
+  /* Faint animation */
+  .fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.4s;
+	animation-name: fade;
+	animation-duration: 1.4s;
+  }
+  
+  @-webkit-keyframes fade {
+	from {opacity: .5}
+	to {opacity: 2}
+  }
+  
+  @keyframes fade {
+	from {opacity: .5}
+	to {opacity: 2}
+  }
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.main-header,
+	.row {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.tagline {
+		font-size: 1.4em;
+	}
+}
+@media (min-width: 1025px) {
+	.main-header,
+	.row {
+		width: 80%;
+		max-width: 1150px;
+	}
+}
